@@ -30,12 +30,12 @@ import Variant4 from "#/PageComponents/ContactForms/Variant4/Form";
 export default function HomePage() {
 
   const services = [
-    { icon: faTree,      title: "Wood Fencing",             body: "Cedar privacy, picket, and ranch-style fences set plumb with concrete posts built for Texas weather.", link: "/services/wood-fencing" },
-    { icon: faBorderAll, title: "Vinyl & Composite Fencing", body: "Low-maintenance privacy systems that stay straight without annual staining or sealing.", link: "/services/vinyl-composite-fencing" },
-    { icon: faHammer,    title: "Deck Building",            body: "Wood and composite decks with solid structure, code-compliant rails, and clean finishes.", link: "/services/deck-building" },
-    { icon: faTools,     title: "Deck Repair & Resurfacing", body: "Board replacement, joist repair, and full resurfacing that saves decks worth keeping.", link: "/services/deck-repair-resurfacing" },
-    { icon: faDoorOpen,  title: "Gate Automation",          body: "Driveway and entry gates with openers, keypads, and app access for homes and properties.", link: "/services/gate-automation" },
-    { icon: faBuilding,  title: "Commercial Fencing",       body: "Chain-link, privacy, and gated access for commercial lots, builders, and HOA common areas.", link: "/services/commercial-fencing" },
+    { icon: faTree,      title: "Wood Fencing",             body: "Cedar privacy, picket, and ranch-style fences set plumb with concrete posts built for Texas weather.", link: "/services/wood-fencing", image: "/pages/home/services/service-1.jpg" },
+    { icon: faBorderAll, title: "Vinyl & Composite Fencing", body: "Low-maintenance privacy systems that stay straight without annual staining or sealing.", link: "/services/vinyl-composite-fencing", image: "/pages/home/services/service-2.jpg" },
+    { icon: faHammer,    title: "Deck Building",            body: "Wood and composite decks with solid structure, code-compliant rails, and clean finishes.", link: "/services/deck-building", image: "/pages/home/services/service-3.jpg" },
+    { icon: faTools,     title: "Deck Repair & Resurfacing", body: "Board replacement, joist repair, and full resurfacing that saves decks worth keeping.", link: "/services/deck-repair-resurfacing", image: "/pages/home/services/service-4.jpg" },
+    { icon: faDoorOpen,  title: "Gate Automation",          body: "Driveway and entry gates with openers, keypads, and app access for homes and properties.", link: "/services/gate-automation", image: "/pages/home/services/service-1.jpg" },
+    { icon: faBuilding,  title: "Commercial Fencing",       body: "Chain-link, privacy, and gated access for commercial lots, builders, and HOA common areas.", link: "/services/commercial-fencing", image: "/pages/home/services/service-2.jpg" },
   ];
 
   const metrics = [
@@ -86,49 +86,45 @@ export default function HomePage() {
     <main className={styles.pageWrapper}>
       <WelcomePage />
       <TrustBar headline="3,400+ fences & decks · 4.9★ from 510+ Central Texas reviews" />
-
       <div className={styles.section}>
         <ServiceCardComponent cards={services} />
       </div>
-
-      <div className={styles.section}>
-        <ImpactMetrics metrics={metrics} cityName="Waco" />
-      </div>
-
       <div className={styles.section}>
         <WhyChooseUs cityName="Waco" features={whyFeatures} />
       </div>
-
       <div className={styles.section}>
         <ProcessTimeline steps={processSteps} />
       </div>
-
       <div className={styles.section}>
-        <WhatToExpect expectations={expectations} />
+        <ImpactMetrics metrics={metrics} cityName="Waco" />
       </div>
-
       <div className={styles.section}>
         <Testimonials testimonials={reviews} />
       </div>
-
       <div className={styles.section}>
         <GuaranteeSection />
       </div>
-
+      <CTABanner
+        secondaryLink="/contact"
+        secondaryText="Free Fence Quote"
+        primaryLink="tel:+12547536400"
+        primaryText="Call (254) 753-6400"
+        subline="Cedar, iron, and composite — posts set right, lines true, and clean gates that swing for years."
+        headline="Fences & Decks Built Square." 
+        imageSrc="/pages/home/welcome/hero-main.jpg"
+       />
       <div className={styles.section}>
         <LocalServiceAreas cityName="Waco" areas={localAreas} />
       </div>
-
+      <div className={styles.section}>
+        <WhatToExpect expectations={expectations} />
+      </div>
       <div className={styles.section}>
         <FAQ cityName="Waco" faq={faq} />
       </div>
-
       <div className={styles.section}>
         <BlogPreviewGrid />
       </div>
-
-      <CTABanner />
-
       <div className={styles.section}>
         <Variant4
           title="Get a Free Fence or Deck Estimate"

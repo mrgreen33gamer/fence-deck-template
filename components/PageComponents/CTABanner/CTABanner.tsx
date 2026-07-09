@@ -5,45 +5,55 @@ import styles from './styles.module.scss';
 import { useTrackEvent } from '&/useTrackEvent';
 
 interface CTABannerProps {
-  headline?:    string;
+  headline?: string;
   subline?: string;
-  primaryText?:  string;
-  primaryLink?:   string;
+  primaryText?: string;
+  primaryLink?: string;
   secondaryText?: string;
-  secondaryLink?:  string;
-  spot?:       string;
+  secondaryLink?: string;
+  spot?: string;
+  imageSrc?: string;
+  eyebrow?: string;
+  badgeA?: string;
+  badgeB?: string;
+  badgeC?: string;
 }
 
+/** TimberLine — fence motif */
 export default function CTABanner({
-  headline      = "Ready for a Fence or Deck Built to Last?",
-  subline   = "Free on-site estimates. Flat-rate quotes — no hidden fees. Call now or request your estimate online.",
-  primaryText  = "Call (254) 753-6400",
-  primaryLink   = "tel:+12547536400",
-  secondaryText = "Free Estimate",
-  secondaryLink  = "/contact",
+  headline = "Fences & Decks Built Square.",
+  subline = "Cedar, iron, and composite — posts set right, lines true, and clean gates that swing for years.",
+  primaryText = "Call (254) 753-6400",
+  primaryLink = "tel:+12547536400",
+  secondaryText = "Free Fence Quote",
+  secondaryLink = "/contact",
   spot = "CTABanner",
+  imageSrc,
+  eyebrow = "TimberLine · Central Texas",
+  badgeA = "Cedar",
+  badgeB = "Iron",
+  badgeC = "Composite",
 }: CTABannerProps) {
   const trackEvent = useTrackEvent();
 
   return (
     <section className={styles.banner} aria-label="Call to action">
-      {/* Decorative grid lines */}
+      {imageSrc ? (
+        <div className={styles.photoBg} aria-hidden="true">
+          <img src={imageSrc} alt="" className={styles.photoBgImg} />
+          <div className={styles.photoScrim} />
+        </div>
+      ) : null}
+
       <div className={styles.grid} aria-hidden="true" />
 
-      {/* Rotating fence silhouette bg */}
       <motion.div
-        className={styles.bgFlake}
-        animate={{ rotate: 360 }}
-        transition={{ duration: 90, repeat: Infinity, ease: 'linear' }}
+        className={styles.bgMotif}
+        animate={{ x: [0, 6, 0] }}
+        transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
         aria-hidden="true"
       >
-        <svg width="520" height="520" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round">
-          <path d="M4 20V8l4-4h8l4 4v12"/>
-          <path d="M4 12h16"/>
-          <path d="M8 12v8"/>
-          <path d="M12 12v8"/>
-          <path d="M16 12v8"/>
-        </svg>
+        <svg width="420" height="420" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21V8l3-3 3 3v13H3zm6 0V8l3-3 3 3v13H9zm6 0V8l3-3 3 3v13h-6zM2 21h20v2H2v-2z" opacity="0.8"/></svg>
       </motion.div>
 
       <div className={styles.inner}>
@@ -56,7 +66,7 @@ export default function CTABanner({
         >
           <span className={styles.eyebrow}>
             <span className={styles.eyebrowDot} />
-            Central Texas Fence &amp; Deck Experts Since 2012
+            {eyebrow}
           </span>
           <h2 className={styles.heading}>{headline}</h2>
           <p className={styles.sub}>{subline}</p>
@@ -79,7 +89,6 @@ export default function CTABanner({
             </svg>
             {primaryText}
           </a>
-
           <Link
             href={secondaryLink}
             className={styles.secondaryBtn}
@@ -90,19 +99,18 @@ export default function CTABanner({
               <polyline points="9 18 15 12 9 6"/>
             </svg>
           </Link>
-
           <div className={styles.badges}>
             <span className={styles.badge}>
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              No Contracts
+              {badgeA}
             </span>
             <span className={styles.badge}>
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              1-Yr Warranty
+              {badgeB}
             </span>
             <span className={styles.badge}>
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Flat-Rate
+              {badgeC}
             </span>
           </div>
         </motion.div>
