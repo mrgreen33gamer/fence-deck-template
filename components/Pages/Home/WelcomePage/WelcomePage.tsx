@@ -55,7 +55,7 @@ const chips = [
 const stats = [
   {
     "value": "3,400+",
-    "label": "Fences &amp; Decks"
+    "label": "Fences & Decks"
   },
   {
     "value": "4.9 ★",
