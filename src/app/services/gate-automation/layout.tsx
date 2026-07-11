@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     siteName: "TimberLine Fence & Deck",
     locale: "en_US",
     type: "website",
-    images: [{ url: `${BASE_URL}/logos/scott-apps-banner.png`, alt: "Gate Automation in Waco, TX – TimberLine Fence & Deck" }],
+    images: [{ url: `${BASE_URL}/pages/home/welcome/hero-main.jpg`, alt: "Gate Automation in Waco, TX – TimberLine Fence & Deck" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Gate Automation in Waco, TX | TimberLine Fence & Deck",
     description: "Driveway and entry gates with openers, keypads, remotes, and app access for homes and properties.",
-    images: [`${BASE_URL}/logos/scott-apps-banner.png`],
+    images: [`${BASE_URL}/pages/home/welcome/hero-main.jpg`],
   },
 };
 

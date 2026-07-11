@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     siteName: "TimberLine Fence & Deck",
     locale: "en_US",
     type: "website",
-    images: [{ url: `${BASE_URL}/logos/scott-apps-banner.png`, alt: "Commercial Fencing in Waco, TX – TimberLine Fence & Deck" }],
+    images: [{ url: `${BASE_URL}/pages/home/welcome/hero-main.jpg`, alt: "Commercial Fencing in Waco, TX – TimberLine Fence & Deck" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Commercial Fencing in Waco, TX | TimberLine Fence & Deck",
     description: "Chain-link, privacy, and gated access for commercial lots, builders, and HOA common areas.",
-    images: [`${BASE_URL}/logos/scott-apps-banner.png`],
+    images: [`${BASE_URL}/pages/home/welcome/hero-main.jpg`],
   },
 };
 

@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     siteName: "TimberLine Fence & Deck",
     locale: "en_US",
     type: "website",
-    images: [{ url: `${BASE_URL}/logos/scott-apps-banner.png`, alt: "Deck Repair & Resurfacing in Waco, TX – TimberLine Fence & Deck" }],
+    images: [{ url: `${BASE_URL}/pages/home/welcome/hero-main.jpg`, alt: "Deck Repair & Resurfacing in Waco, TX – TimberLine Fence & Deck" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Deck Repair & Resurfacing in Waco, TX | TimberLine Fence & Deck",
     description: "Board replacement, joist repair, and full resurfacing for decks worth saving — without a full tear-down.",
-    images: [`${BASE_URL}/logos/scott-apps-banner.png`],
+    images: [`${BASE_URL}/pages/home/welcome/hero-main.jpg`],
   },
 };
 

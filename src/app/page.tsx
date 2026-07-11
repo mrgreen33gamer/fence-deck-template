@@ -34,8 +34,8 @@ export default function HomePage() {
     { icon: faBorderAll, title: "Vinyl & Composite Fencing", body: "Low-maintenance privacy systems that stay straight without annual staining or sealing.", link: "/services/vinyl-composite-fencing", image: "/pages/home/services/service-2.jpg" },
     { icon: faHammer,    title: "Deck Building",            body: "Wood and composite decks with solid structure, code-compliant rails, and clean finishes.", link: "/services/deck-building", image: "/pages/home/services/service-3.jpg" },
     { icon: faTools,     title: "Deck Repair & Resurfacing", body: "Board replacement, joist repair, and full resurfacing that saves decks worth keeping.", link: "/services/deck-repair-resurfacing", image: "/pages/home/services/service-4.jpg" },
-    { icon: faDoorOpen,  title: "Gate Automation",          body: "Driveway and entry gates with openers, keypads, and app access for homes and properties.", link: "/services/gate-automation", image: "/pages/home/services/service-1.jpg" },
-    { icon: faBuilding,  title: "Commercial Fencing",       body: "Chain-link, privacy, and gated access for commercial lots, builders, and HOA common areas.", link: "/services/commercial-fencing", image: "/pages/home/services/service-2.jpg" },
+    { icon: faDoorOpen,  title: "Gate Automation",          body: "Driveway and entry gates with openers, keypads, and app access for homes and properties.", link: "/services/gate-automation", image: "/pages/home/welcome/before.jpg" },
+    { icon: faBuilding,  title: "Commercial Fencing",       body: "Chain-link, privacy, and gated access for commercial lots, builders, and HOA common areas.", link: "/services/commercial-fencing", image: "/pages/home/welcome/after.jpg" },
   ];
 
   const metrics = [

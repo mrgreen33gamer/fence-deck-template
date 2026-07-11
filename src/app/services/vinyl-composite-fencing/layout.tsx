@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     siteName: "TimberLine Fence & Deck",
     locale: "en_US",
     type: "website",
-    images: [{ url: `${BASE_URL}/logos/scott-apps-banner.png`, alt: "Vinyl & Composite Fencing in Waco, TX – TimberLine Fence & Deck" }],
+    images: [{ url: `${BASE_URL}/pages/home/welcome/hero-main.jpg`, alt: "Vinyl & Composite Fencing in Waco, TX – TimberLine Fence & Deck" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Vinyl & Composite Fencing in Waco, TX | TimberLine Fence & Deck",
     description: "Low-maintenance vinyl and composite privacy systems that stay straight without annual staining.",
-    images: [`${BASE_URL}/logos/scott-apps-banner.png`],
+    images: [`${BASE_URL}/pages/home/welcome/hero-main.jpg`],
   },
 };
 

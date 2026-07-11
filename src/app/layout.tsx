@@ -118,7 +118,7 @@ export const metadata: Metadata = {
     siteName: "TimberLine Fence & Deck",
     images: [
       {
-        url: `${BASE_URL}/logos/scott-apps-banner.png?v=1`,
+        url: `${BASE_URL}/pages/home/welcome/hero-main.jpg`,
         width: 1200,
         height: 630,
         alt: "TimberLine Fence & Deck — Waco TX Fences & Decks",
@@ -132,7 +132,7 @@ export const metadata: Metadata = {
     title: "TimberLine Fence & Deck | Waco TX Fence & Deck Builder",
     description:
       "Wood fencing, vinyl/composite, custom decks, repairs & commercial installs for Central Texas. Licensed & insured — 3-year workmanship warranty.",
-    images: [`${BASE_URL}/logos/scott-apps-banner.png?v=1`],
+    images: [`${BASE_URL}/pages/home/welcome/hero-main.jpg`],
   },
   robots: {
     index: true,

@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     siteName: "TimberLine Fence & Deck",
     locale: "en_US",
     type: "website",
-    images: [{ url: `${BASE_URL}/logos/scott-apps-banner.png`, alt: "Wood Fencing in Waco, TX – TimberLine Fence & Deck" }],
+    images: [{ url: `${BASE_URL}/pages/home/welcome/hero-main.jpg`, alt: "Wood Fencing in Waco, TX – TimberLine Fence & Deck" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Wood Fencing in Waco, TX | TimberLine Fence & Deck",
     description: "Cedar privacy, picket, and ranch-style wood fences with concrete-set posts and a 3-year workmanship warranty.",
-    images: [`${BASE_URL}/logos/scott-apps-banner.png`],
+    images: [`${BASE_URL}/pages/home/welcome/hero-main.jpg`],
   },
 };
 

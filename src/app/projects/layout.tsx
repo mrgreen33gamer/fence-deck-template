@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     siteName: 'TimberLine Fence & Deck',
     locale: 'en_US',
     type: 'website',
-    images: [{ url: `${BASE_URL}/logos/scott-apps-banner.png`, alt: 'TimberLine Fence & Deck projects — Waco TX' }],
+    images: [{ url: `${BASE_URL}/pages/home/welcome/hero-main.jpg`, alt: 'TimberLine Fence & Deck projects — Waco TX' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Projects & Portfolio | TimberLine Fence & Deck',
     description: 'Real fence and deck projects for Central Texas homeowners and businesses.',
-    images: [`${BASE_URL}/logos/scott-apps-banner.png`],
+    images: [`${BASE_URL}/pages/home/welcome/hero-main.jpg`],
   },
   robots: { index: true, follow: true },
 };
